@@ -4,7 +4,9 @@
      background-attachment: fixed;
  }
 
-
+ .black-background {
+     background-color: black;
+ }
 
  #header-title {
      font-family: 'Berkshire Swash', cursive !important;
