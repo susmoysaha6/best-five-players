@@ -1,12 +1,12 @@
-.header {
-    height: 480px;
-    background-color: black;
-    background-attachment: fixed;
-}
+ .header {
+     height: 100%;
+     background-color: black;
+     background-attachment: fixed;
+ }
 
 
 
-#header-title {
-    font-family: 'Berkshire Swash', cursive;
-    color: #FF5E19;
-}
+ #header-title {
+     font-family: 'Berkshire Swash', cursive !important;
+     color: #FF5E19 !important;
+ }
