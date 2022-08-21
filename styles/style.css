@@ -1,0 +1,12 @@
+.header {
+    height: 480px;
+    background-color: black;
+    background-attachment: fixed;
+}
+
+
+
+#header-title {
+    font-family: 'Berkshire Swash', cursive;
+    color: #FF5E19;
+}
