@@ -36,14 +36,14 @@
     <!-- header section end  -->
     <!-- main section start -->
 
-    <main>
-        <div class="container-fluid bg-dark">
+    <main class="bg-dark pb-5">
+        <div class="container-fluid ">
             <div class="container pt-5">
                 <div class="row gx-5 gy-5">
                     <!-- players section start  -->
                     <div class="col-md-8">
                         <div class="row gy-5">
-                            <div class="col-md-4">
+                            <div class="col-12 col-md-6 col-lg-4">
                                 <div class="card black-background text-white">
                                     <img src="assets/messi.png" class="card-img-top" alt="...">
                                     <div class="card-body">
@@ -55,7 +55,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-12 col-md-6 col-lg-4">
                                 <div class="card black-background text-white">
                                     <img src="assets/naymer.png" class="card-img-top" alt="...">
                                     <div class="card-body">
@@ -67,7 +67,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-12 col-md-6 col-lg-4">
                                 <div class="card black-background text-white">
                                     <img src="assets/mbappe.png" class="card-img-top" alt="...">
                                     <div class="card-body">
@@ -79,7 +79,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-12 col-md-6 col-lg-4">
                                 <div class="card black-background text-white">
                                     <img src="assets/victor.png" class="card-img-top" alt="...">
                                     <div class="card-body">
@@ -91,7 +91,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-12 col-md-6 col-lg-4">
                                 <div class="card black-background text-white">
                                     <img src="assets/ramos.png" class="card-img-top" alt="...">
                                     <div class="card-body">
@@ -103,7 +103,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-12 col-md-6 col-lg-4">
                                 <div class="card black-background text-white">
                                     <img src="assets/sanches.png" class="card-img-top" alt="...">
                                     <div class="card-body">
@@ -122,14 +122,13 @@
                     <div class="col-md-4">
                         <!-- select 5 section start  -->
                         <div class="pb-2">
-                            <div class="card cardbg black-background text-white" style="width: 100%;">
+                            <div class="card  black-background text-white" style="width: 100%;">
                                 <div class="card-body">
                                     <div class="d-flex flex-column align-items-center pb-4">
                                         <h4 class="card-title text-white text-center pb-2">Selected Five</h4>
                                         <img class="w-75" src="assets/line2.png" alt="">
                                     </div>
                                     <ol id="player-list">
-
                                     </ol>
                                 </div>
                             </div>
@@ -145,12 +144,14 @@
                                     </div>
                                     <div class="perplayer text-white d-flex justify-content-between pb-4">
                                         <p>Per Player</p>
-                                        <input type="text" class="form-control w-50">
+                                        <input id="budget-per-player" type="text" class="form-control w-50">
                                     </div>
                                     <a id="calculate-btn" href="#" class="btn btn-primary d-block mb-3">Calculate</a>
                                     <div class="perplayer text-white d-flex justify-content-between pb-4">
-                                        <p>Player Expenses</p>
-                                        <span>$5000</span>
+                                        <p>Player Expenses </p>
+                                        <span> $
+                                            <span id="player-expence">0</span>
+                                        </span>
                                     </div>
                                     <div class="perplayer text-white d-flex justify-content-between pb-4">
                                         <p>Manager</p>
