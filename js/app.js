@@ -1,3 +1,13 @@
+// common functions
+function getElementByInputId(inputId) {
+    const inputElement = document.getElementById(inputId);
+    const inputString = inputElement.value;
+    const inputNumber = parseFloat(inputString);
+    inputElement.value = '';
+    return inputNumber;
+
+}
+
 // event listener for select button
 const items = document.getElementsByClassName('select-btn');
 let count = 1
@@ -21,15 +31,7 @@ for (let i = 0; i < items.length; i++) {
         // event.target.removeEventListener();
     })
 }
-// 
-function getElementByInputId(inputId) {
-    const inputElement = document.getElementById(inputId);
-    const inputString = inputElement.value;
-    const inputNumber = parseFloat(inputString);
-    inputElement.value = '';
-    return inputNumber;
 
-}
 // event handler for calculate button
 
 document.getElementById('calculate-btn').addEventListener('click', function () {
@@ -45,4 +47,22 @@ document.getElementById('calculate-btn').addEventListener('click', function () {
     const totalPlayerExpence = totalPlayer * perPlayerBudget;
     playerExpenceField.innerText = totalPlayerExpence;
 
+});
+
+// event handler for calculate total button
+
+document.getElementById('calculate-total-btn').addEventListener('click', function () {
+    const playerExpenceField = document.getElementById('player-expence');
+    const totalPlayerExpenceString = playerExpenceField.innerText;
+    const totalPlayerExpence = parseFloat(totalPlayerExpenceString);
+    const managerBudget = getElementByInputId('manager-budget');
+    const coachBudget = getElementByInputId('coach-budget');
+    if (isNaN(managerBudget) || isNaN(coachBudget) || managerBudget < 0 || coachBudget < 0) {
+        alert('Enter valid number');
+        return;
+    }
+    const totalExpence = totalPlayerExpence + managerBudget + coachBudget;
+    const totalField = document.getElementById('total-field');
+    totalField.innerText = totalExpence;
 })
+
