@@ -26,7 +26,7 @@ for (let i = 0; i < items.length; i++) {
             event.target.setAttribute('disabled', 'disabled');
             count += 1;
         } else if (count > 5) {
-            alert('You already have selected 5 players')
+            alert('You already have selected 5 players');
         }
     })
 }
