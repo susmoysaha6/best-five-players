@@ -24,11 +24,10 @@ for (let i = 0; i < items.length; i++) {
             bestFiveList.appendChild(li);
             event.target.classList.add('active');
             event.target.setAttribute('disabled', 'disabled');
-            count = count + 1;
+            count += 1;
         } else if (count > 5) {
             alert('You already have selected 5 players')
         }
-        // event.target.removeEventListener();
     })
 }
 
@@ -64,5 +63,5 @@ document.getElementById('calculate-total-btn').addEventListener('click', functio
     const totalExpence = totalPlayerExpence + managerBudget + coachBudget;
     const totalField = document.getElementById('total-field');
     totalField.innerText = totalExpence;
-})
+});
 
